@@ -5,7 +5,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { motion } from "framer-motion";
-import { useColorMode } from "../context/ThemeContext";
+
 
 const ContactPage: React.FC = () => {
   const sentence =

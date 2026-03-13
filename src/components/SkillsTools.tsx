@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FaReact } from "react-icons/fa";
 import { SiFlutter } from "react-icons/si";
 import { FiMonitor } from "react-icons/fi";
-import { useColorMode } from "../context/ThemeContext";
+
 
 const expertiseData = [
   {

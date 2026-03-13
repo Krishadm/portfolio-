@@ -6,7 +6,7 @@ import {
   Avatar
 } from "@mui/material";
 import { motion } from "framer-motion";
-import { useColorMode } from "../context/ThemeContext";
+
 
 const experienceData = [
   {
