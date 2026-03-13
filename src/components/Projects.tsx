@@ -1,6 +1,6 @@
 import { Box, Typography, Grid, Button } from "@mui/material";
 import { motion } from "framer-motion";
-import { useColorMode } from "../context/ThemeContext";
+
 
 interface Project {
   title: string;
@@ -38,8 +38,8 @@ const projects: Project[] = [
 ];
 
 export default function Projects() {
-  const { mode } = useColorMode();
-  const isDark = mode === "dark";
+  // const { mode } = useColorMode();
+  // const isDark = mode === "dark";
 
   return (
     <Box
