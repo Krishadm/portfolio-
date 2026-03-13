@@ -14,8 +14,9 @@ export default function App() {
     <>
       <CursorFollower />
     <ColorModeProvider>
+      <Box sx={{ backgroundColor: "rgba(18, 18, 18, 0.85)", minHeight: "100vh" }}>
       <Header />
-      <Box>
+      <Box sx={{ backgroundColor: "rgba(18, 18, 18, 0.85)", minHeight: "100vh" }}>
         {/* Add padding top to offset fixed AppBar */}
         <Box id="about-me">
           <ProfileSection />
@@ -35,6 +36,7 @@ export default function App() {
         <Box id="contact">
           <ContactPage />
         </Box>
+      </Box>
       </Box>
     </ColorModeProvider>
     </>
