@@ -12,8 +12,6 @@ const ContactPage: React.FC = () => {
     "Feel free to reach out to me for any questions and opportunities!";
   const words = sentence.split(" ");
 
-  const { mode } = useColorMode();
-  const isDark = mode === "dark";
 
   const socials = [
     {
@@ -60,9 +58,7 @@ const ContactPage: React.FC = () => {
           content: '""',
           position: "absolute",
           inset: 0,
-          backgroundColor: isDark
-            ? "rgba(18,18,18,0.88)"
-            : "rgba(30,30,30,0.78)",
+          bgcolor:"rgba(18, 18, 18, 0.85)",
           zIndex: 0,
         },
       }}

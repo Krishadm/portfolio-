@@ -30,8 +30,7 @@ const expertiseData = [
 ];
 
 export default function SkillsTools() {
-  const { mode } = useColorMode();
-  const isDark = mode === 'dark';
+
 
   return (
     <Box
@@ -53,7 +52,7 @@ export default function SkillsTools() {
           left: 0,
           right: 0,
           bottom: 0,
-          backgroundColor: isDark ? "rgba(18, 18, 18, 0.85)" : "rgba(30, 30, 30, 0.75)", // Slightly lighter overlay in light mode, but still dark to contrast with white text
+          bgcolor:"rgba(18, 18, 18, 0.85)", // Slightly lighter overlay in light mode, but still dark to contrast with white text
           zIndex: 0,
         }
       }}

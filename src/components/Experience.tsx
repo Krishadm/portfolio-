@@ -28,8 +28,7 @@ const experienceData = [
 ];
 
 export default function Experience() {
-  const { mode } = useColorMode();
-  const isDark = mode === "dark";
+
 
   return (
     <Box
@@ -42,9 +41,7 @@ export default function Experience() {
           content: '""',
           position: "absolute",
           inset: 0,
-          backgroundColor: isDark
-            ? "rgba(18,18,18,0.85)"
-            : "rgba(30,30,30,0.75)",
+          bgcolor:"rgba(18, 18, 18, 0.85)",
           zIndex: 0
         }
       }}
