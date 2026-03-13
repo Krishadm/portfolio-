@@ -1,5 +1,3 @@
-
-import React from "react";
 import { Box, Typography, Grid, Button } from "@mui/material";
 import { motion } from "framer-motion";
 import { useColorMode } from "../context/ThemeContext";
@@ -89,7 +87,7 @@ export default function Projects() {
         {/* GRID */}
         <Grid container sx={{ border: "1px solid rgba(255,255,255,0.2)" }}>
           {projects.map((project, index) => (
-            <Grid key={index} xs={12} md={4}>
+           <Grid size={{ xs: 12, md: 4 }} key={index}>
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}

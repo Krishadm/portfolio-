@@ -1,7 +1,6 @@
 import { Box, Typography, Stack } from "@mui/material";
 import { motion } from "framer-motion";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import generatedimage from "../../src/generated-image.png";
 import test from "../../src/test.jpg";
 
 import { FaReact, FaJs, FaGithub } from "react-icons/fa";

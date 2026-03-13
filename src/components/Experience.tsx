@@ -3,8 +3,7 @@ import {
   Typography,
   Card,
   CardContent,
-  Avatar,
-  Grid
+  Avatar
 } from "@mui/material";
 import { motion } from "framer-motion";
 import { useColorMode } from "../context/ThemeContext";
@@ -42,10 +41,7 @@ export default function Experience() {
         "&::before": {
           content: '""',
           position: "absolute",
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
+          inset: 0,
           backgroundColor: isDark
             ? "rgba(18,18,18,0.85)"
             : "rgba(30,30,30,0.75)",
@@ -54,8 +50,8 @@ export default function Experience() {
       }}
     >
       <Box position="relative" zIndex={1} maxWidth="1100px" mx="auto">
-        
-        {/* Section Title */}
+
+        {/* Title */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -67,17 +63,27 @@ export default function Experience() {
             fontWeight="bold"
             textAlign="center"
             mb={8}
-            sx={{
-              fontSize: { xs: "2.3rem", md: "3.3rem" }
-            }}
+            sx={{ fontSize: { xs: "2.3rem", md: "3.3rem" } }}
           >
             My Experience
           </Typography>
         </motion.div>
 
-        <Grid container spacing={4}>
+        {/* Cards */}
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: 4
+          }}
+        >
           {experienceData.map((exp, index) => (
-            <Grid item xs={12} md={6} key={index}>
+            <Box
+              key={index}
+              sx={{
+                width: { xs: "100%", md: "48%" }
+              }}
+            >
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -133,9 +139,10 @@ export default function Experience() {
                   </CardContent>
                 </Card>
               </motion.div>
-            </Grid>
+            </Box>
           ))}
-        </Grid>
+        </Box>
+
       </Box>
     </Box>
   );
