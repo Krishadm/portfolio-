@@ -110,7 +110,10 @@ export default function Experience() {
                         sx={{ width: 45, height: 45, mr: 2 }}
                       />
                       <Box>
-                        <Typography variant="h6" fontWeight="bold">
+                        <Typography variant="h6"sx={{
+    color: "#fff",
+    fontSize: { xs: "1.05rem", md: "1.2rem" }
+  }} fontWeight="bold">
                           {exp.company}
                         </Typography>
                         <Typography
